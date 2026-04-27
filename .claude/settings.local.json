@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:spectacular-ganache-79fd91.netlify.app)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp"
+    ]
+  }
+}
