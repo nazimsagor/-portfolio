@@ -77,6 +77,21 @@ const skillObserver = new IntersectionObserver((entries) => {
 
 skillFills.forEach(fill => skillObserver.observe(fill));
 
+// ===== TOUCH: PROJECT CARD OVERLAY (mobile tap) =====
+if ('ontouchstart' in window) {
+  document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('click', function (e) {
+      // if link was tapped, allow it
+      if (e.target.closest('.project-link')) return;
+      const overlay = this.querySelector('.project-overlay');
+      const isVisible = overlay.style.opacity === '1';
+      // close all others
+      document.querySelectorAll('.project-overlay').forEach(o => o.style.opacity = '0');
+      overlay.style.opacity = isVisible ? '0' : '1';
+    });
+  });
+}
+
 // ===== CONTACT FORM =====
 const form = document.querySelector('.contact-form');
 if (form) {
