@@ -40,14 +40,24 @@
   <!-- ===== HERO ===== -->
   <section class="hero" id="home">
     <div class="hero-bg"></div>
-    <div class="hero-content" data-aos="fade-up">
+
+    <!-- Floating particles -->
+    <div class="particle p1"></div>
+    <div class="particle p2"></div>
+    <div class="particle p3"></div>
+    <div class="particle p4"></div>
+
+    <div class="hero-content" data-aos="fade-up" data-aos-duration="900">
+      <div class="hero-badge-top">
+        <span class="dot-pulse"></span> Available for work
+      </div>
       <p class="hero-greeting">Hello, I'm</p>
       <h1 class="hero-name">MD Rayhan</h1>
       <h2 class="hero-title">Frontend <span id="typed"></span></h2>
       <p class="hero-desc">I craft beautiful, responsive, and user-friendly web experiences that make a difference.</p>
       <div class="hero-btns">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-outline">Hire Me</a>
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-eye"></i> View My Work</a>
+        <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Hire Me</a>
       </div>
       <div class="hero-socials">
         <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -56,12 +66,46 @@
         <a href="mailto:rayhan@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
-    <div class="hero-image" data-aos="fade-left">
-      <div class="hero-avatar">
-        <i class="fas fa-user"></i>
+
+    <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+      <!-- Floating stat cards -->
+      <div class="hero-stat stat-1">
+        <i class="fas fa-code"></i>
+        <div>
+          <strong>50+</strong>
+          <span>Projects</span>
+        </div>
       </div>
-      <div class="hero-blob"></div>
+      <div class="hero-stat stat-2">
+        <i class="fas fa-star"></i>
+        <div>
+          <strong>2+</strong>
+          <span>Years Exp.</span>
+        </div>
+      </div>
+      <div class="hero-stat stat-3">
+        <i class="fas fa-smile"></i>
+        <div>
+          <strong>30+</strong>
+          <span>Clients</span>
+        </div>
+      </div>
+
+      <!-- Avatar with rings -->
+      <div class="avatar-wrapper">
+        <div class="avatar-ring ring-1"></div>
+        <div class="avatar-ring ring-2"></div>
+        <div class="hero-avatar">
+          <i class="fas fa-user"></i>
+        </div>
+        <!-- Tech icons orbiting -->
+        <div class="orbit-icon oi-1"><i class="fab fa-html5"></i></div>
+        <div class="orbit-icon oi-2"><i class="fab fa-css3-alt"></i></div>
+        <div class="orbit-icon oi-3"><i class="fab fa-js"></i></div>
+        <div class="orbit-icon oi-4"><i class="fab fa-react"></i></div>
+      </div>
     </div>
+
     <a href="#about" class="scroll-down">
       <i class="fas fa-chevron-down"></i>
     </a>
